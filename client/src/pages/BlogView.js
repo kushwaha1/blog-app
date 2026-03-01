@@ -13,7 +13,6 @@ function Avatar({ user, size = 34 }) {
 
 export default function BlogView() {
   const { id } = useParams();
-  const { user } = useAuth();
   const [blog, setBlog] = useState(null);
   const [fetchError, setFetchError] = useState('');
   const [commentText, setCommentText] = useState('');
