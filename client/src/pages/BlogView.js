@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import API from '../api/axios';
-import { useAuth } from '../context/AuthContext';
 
 function Avatar({ user, size = 34 }) {
   const style = { width: size, height: size, borderRadius: '50%', objectFit: 'cover' };
